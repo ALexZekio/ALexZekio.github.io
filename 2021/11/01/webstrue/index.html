@@ -9,7 +9,7 @@
     
     <title>
         
-            归档: 2022 |
+            互联网世界的真理 |
         
         BOE领域
     </title>
@@ -69,7 +69,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/archives"
                             >
                                 归档
@@ -111,7 +111,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/archives">归档</a>
                 </li>
             
@@ -136,31 +136,147 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="archive-container ">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">互联网世界的真理</span>
+        </div>
+
         
-<div class="archive-list-container">
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">楠墙NanLex</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2021-11-01 12:34:22</span>
+        <span class="mobile">2021-11-01 12:34</span>
+    </span>
     
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2022</span>
-                <span class="archive-year-post-count">[1]</span>
-            </div>
-            <ul class="article-list">
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/06/08/hello-world/"
-                        >Hello World</a>
-                        <span class="article-date">06-08</span>
-                    </li>
-                
-            </ul>
-        </section>
+    
+
+    
+    
+    
     
 </div>
 
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <ul>
+<li><strong>世界是二元化、多元化的，随便给他人贴上敌人的标签，是很幼稚、愚蠢的行为。</strong></li>
+<li><strong>价值跟劳动有关，程序员开发的软件是辛苦劳动的成果，需要得到尊重和保护。</strong></li>
+<li><strong>商品交换是避免冲突的公平的有道德的行为。</strong></li>
+<li><strong>以道德的名义轻贱开发者的劳作成果、以道德的名义对开发者说三道四胡乱揣测其动机、以道德的名义企图改变他人合法合理的行为，本身就是不公平、不人道、不道德的行为。</strong></li>
+<li><strong>对绝大多数人来说，软件是实用工具，而不是什么价值观或信仰的载体。</strong></li>
+<li><strong>人的本性是利己的，但也是理性的。道德和信仰不能解决(软件的)生产效率问题，只有物质利益才可以，这无可厚非。</strong></li>
+</ul>
+<p>互联网展现了人性中奉献合作精神这些善的一面，但凡事不能极端，太极端就会走向它的反面，极端的善就是极端的恶，极端的自由就是极端的压迫。男女双方共存互补才能繁衍进化，政党需要监督才能避免堕落腐化，私有经济和公有经济其实都有用处，很多时候矛盾的双方都是“人民内部矛盾”，并没有谁对谁错，将异己者贴上“敌人”的标签然后企图消灭敌人的极端的一元化思维会造成灾难性后果。</p>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+            <div class="comment-container">
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;评论</i>
+    </div>
+    
+
+        
+            
+    <div class="valine-container">
+        <script 
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+        <div id="vcomments"></div>
+        <script >
+            function loadValine() {
+                new Valine({
+                    el: '#vcomments',
+                    appId: 'Yd12YrWdX4H3LX6jwfSU6Jrp-gzGzoHsz',
+                    appKey: 'PgOvBQbNxh9b4z5ziySVzLgd',
+                    meta: ['nick', 'mail', 'link'],
+                    avatar: 'wavatar',
+                    enableQQ: true,
+                    placeholder: '好歹说点什么呗',
+                    lang: 'zh-CN'.toLowerCase()
+                });
+
+                function getAuthor(language) {
+                    switch (language) {
+                        case 'en':
+                            return 'Author';
+                        case 'zh-CN':
+                            return '博主';
+                        default:
+                            return 'Master';
+                    }
+                }
+
+                // Add "Author" identify
+                const getValineDomTimer = setInterval(() => {
+                    const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
+                    if (vcards.length > 0) {
+                        let author = '楠墙NanLex';
+
+                        if (author) {
+                            for (let vcard of vcards) {
+                                const vnick_dom = vcard.querySelector('.vhead .vnick');
+                                const vnick = vnick_dom.innerHTML;
+                                if (vnick === author) {
+                                    vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
+                                }
+                            }
+                        }
+                        clearInterval(getValineDomTimer);
+                    } else {
+                        clearInterval(getValineDomTimer);
+                    }
+                }, 2000);
+            }
+
+            if ('false') {
+                const loadValineTimeout = setTimeout(() => {
+                    loadValine();
+                    clearTimeout(loadValineTimeout);
+                }, 1000);
+            } else {
+                window.addEventListener('DOMContentLoaded', loadValine);
+            }
+        </script>
+    </div>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
     </div>
 </div>
+
 
                 
             </div>
@@ -204,6 +320,23 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-bottom-side-tools">
